@@ -1,0 +1,133 @@
+body {
+  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(6 1fr);
+}
+
+.name {
+  grid-column: 2 / span 1;
+  margin: auto;
+  justify-content: start;
+  color: black;
+  font-size: 25px;
+}
+
+.demopadding {
+  margin: 50px auto;
+  width: 140px;
+  text-align: center;
+  grid-column: 5/ span 1;
+}
+
+.icon {
+  position: relative;
+  text-align: center;
+  width: 0px;
+  height: 0px;
+  padding: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  color: #FFFFFF;
+}
+
+.icon i {
+  font-size: 20px;
+  position: absolute;
+  left: 9px;
+  top: 10px;
+}
+
+.icon.social {
+  float: left;
+  margin: 0 5px 0 0;
+  cursor: pointer;
+  background: white;
+  color: #262626;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.icon.social:hover {
+  background: #262626;
+  color: #6d6e71;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
+  -moz-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
+  -ms-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
+  -o-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
+  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
+}
+
+.icon.social.fb i {
+  left: 13px;
+  top: 10px;
+}
+
+.icon.social.tw i {
+  left: 11px;
+}
+
+.icon.social.in i {
+  left: 11px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto auto;
+  width: 100%;
+}
+
+.profile {
+  /* grid-row: 2 / span 2; */
+  grid-column: 2 / span 5;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888
+}
+
+#image {
+  width: 100%;
+}
+
+#text {
+  padding: 5px;
+  color: black;
+  /* font-size: 15px;
+  grid-row: 2 / span 1; */
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 2px black solid;
+}
+
+li {
+  padding: 5px;
+  text-align: left;
+  margin-left: -10px;
+}
+
+#resume {
+  background-color: gray;
+  height: 50px;
+  margin-top: 25px;
+  text-align: center;
+}
